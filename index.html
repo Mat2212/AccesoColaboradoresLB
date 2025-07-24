@@ -4,18 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login Liceo Boston</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Cargamos Montserrat 400 y 900 -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
   <script src="https://accounts.google.com/gsi/client" async defer></script>
   <style>
     * {
       box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       transition: all 0.3s ease;
     }
     body {
       margin: 0;
       background: #0f172a;
-      color: #f1f5f9;
+      color: #3c3777;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -44,20 +45,23 @@
       justify-content: center;
       width: 40px;
       height: 40px;
-      background-color: #9DC53D;
+      background-color: #3c3777;
       border-radius: 50%;
-      font-weight: bold;
+      font-weight: 900;
       font-size: 1rem;
       color: #1e293b;
+      font-family: 'Montserrat', sans-serif;
     }
     .logo-text {
       font-size: 1.25rem;
-      font-weight: bold;
+      font-weight: 900; /* Montserrat Black */
+      color: #3c3777;
     }
     .slogan {
       font-size: 0.9rem;
-      color: #64748b;
+      color: #3c3777;
       margin-bottom: 1.5rem;
+      font-weight: 400;
     }
     input {
       width: 100%;
@@ -67,10 +71,11 @@
       border-radius: 10px;
       outline: none;
       background: #334155;
-      color: #f8fafc;
+      color: #3c3777;
+      font-weight: 400;
     }
     input:focus {
-      border: 2px solid #60a5fa;
+      border: 2px solid #3c3777;
       background: #1e293b;
     }
     button {
@@ -79,22 +84,23 @@
       margin-top: 1rem;
       border: none;
       border-radius: 10px;
-      background: #2563eb;
+      background: #3c3777;
       color: white;
-      font-weight: bold;
+      font-weight: 900;
       cursor: pointer;
-      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+      box-shadow: 0 4px 12px rgba(60, 55, 119, 0.4);
     }
     button:disabled {
-      background: #1e40af;
+      background: #2f2b5e;
       cursor: not-allowed;
     }
     .link {
       display: block;
       text-align: right;
       margin-top: 0.5rem;
-      color: #93c5fd;
+      color: #3c3777;
       cursor: pointer;
+      font-weight: 400;
     }
     .g_id_signin {
       margin-top: 1rem;
@@ -102,11 +108,13 @@
     .message {
       margin-top: 1rem;
       color: #facc15;
+      font-weight: 400;
     }
     footer {
       margin-top: 2rem;
       font-size: 0.75rem;
-      color: #64748b;
+      color: #3c3777;
+      font-weight: 400;
     }
   </style>
 </head>
@@ -188,7 +196,7 @@
         const googleButton = document.querySelector('.g_id_signin');
         if (googleButton) {
           googleButton.scrollIntoView({ behavior: 'smooth' });
-          googleButton.style.outline = "2px solid #2563eb";
+          googleButton.style.outline = "2px solid #3c3777";
           setTimeout(() => {
             googleButton.style.outline = "none";
           }, 3000);
